@@ -1,0 +1,24 @@
+<html>
+<body onload='getMe()'>
+
+<script language="javascript">
+
+var x = [1, 2, 3, 4, 5];
+for(var no = 0; no < x.length; no++){
+  y = x[no];
+  document.write(y);
+}
+
+function evenNo(e){
+  return e%2 == 0;
+}
+
+function getMe(){
+  document.getElementById('output').innerHTML = x.every(evenNo);
+}
+
+</script>
+
+<div id='output'>Even?</div>
+</body>
+</html>
